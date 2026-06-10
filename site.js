@@ -8,6 +8,8 @@
   const prev = document.querySelector(".carousel-arrow.prev");
   const next = document.querySelector(".carousel-arrow.next");
   const mobileWhatsapp = document.querySelector(".mobile-whatsapp");
+  const hero = document.querySelector(".conversion-hero");
+  const heroFrame = document.querySelector(".hero-impact-frame");
 
   const toggleNavState = () => {
     nav?.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -23,6 +25,32 @@
       item.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
     });
   });
+
+  document.querySelectorAll(".trust-card, .process-step, .include-grid li, .plan-card, details, .final-whatsapp-card, .company-card").forEach((item, index) => {
+    item.classList.add("living-card");
+    item.style.setProperty("--card-delay", `${(index % 7) * -0.38}s`);
+    item.style.setProperty("--card-speed", `${6.5 + (index % 5) * 0.55}s`);
+    item.style.setProperty("--card-glow", index % 3 === 0 ? "rgba(244, 196, 48, 0.18)" : "rgba(37, 211, 102, 0.15)");
+  });
+
+  if (hero && finePointer) {
+    hero.addEventListener("pointermove", (event) => {
+      const rect = hero.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      hero.style.setProperty("--orbit-x", `${x * 26}px`);
+      hero.style.setProperty("--orbit-y", `${y * 22}px`);
+      hero.style.setProperty("--hero-glow-x", `${event.clientX - rect.left}px`);
+      hero.style.setProperty("--hero-glow-y", `${event.clientY - rect.top}px`);
+    });
+
+    hero.addEventListener("pointerleave", () => {
+      hero.style.setProperty("--orbit-x", "0px");
+      hero.style.setProperty("--orbit-y", "0px");
+      hero.style.setProperty("--hero-glow-x", "64%");
+      hero.style.setProperty("--hero-glow-y", "44%");
+    });
+  }
 
   if (mobileWhatsapp) {
     const stickyBlockers = Array.from(document.querySelectorAll(".problem-section, .process-section, .examples-section, .offer-card, .plans-section, .about-section, .final-action"));
@@ -220,8 +248,6 @@
       duration: 0.82
     }, 0.26);
 
-  const hero = document.querySelector(".conversion-hero");
-  const heroFrame = document.querySelector(".hero-impact-frame");
   if (hero && heroFrame) {
     gsap.to(heroFrame, {
       yPercent: -5,
