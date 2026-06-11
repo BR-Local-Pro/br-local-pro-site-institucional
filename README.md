@@ -6,10 +6,17 @@ Site institucional da BR Local Pro, criado para converter visitantes em conversa
 
 - `index.html` - pagina principal
 - `styles.css` - estilos do site
-- `site.js` - interacoes e carrossel
-- `assets/` - imagens do site
-- `vendor/` - bibliotecas locais usadas pela pagina
+- `site.js` - interacoes, carrossel e comportamento mobile
+- `assets/` - imagens otimizadas em WebP e favicon
 
-## Publicacao
+## Hospedagem
 
-Site estatico pronto para GitHub Pages.
+Publicado na Cloudflare Pages:
+
+https://br-local-pro-site-institucional.pages.dev/
+
+## Observacoes
+
+- Nao publicar arquivos de preview, screenshots ou cache.
+- Nao commitar `.wrangler/`.
+- Manter imagens finais otimizadas sempre que possivel.

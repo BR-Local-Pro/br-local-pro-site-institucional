@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BR Local Pro | Prévia grátis de site para brasileiros nos EUA</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="./assets/br-local-pro-hero-impact.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/br-local-pro-hero-impact-1400.webp"
+      imagesrcset="./assets/br-local-pro-hero-impact-900.webp 900w, ./assets/br-local-pro-hero-impact-1400.webp 1400w, ./assets/br-local-pro-hero-impact-1800.webp 1800w"
+      imagesizes="(max-width: 760px) 96vw, 54vw"
+      type="image/webp"
+      fetchpriority="high"
+    />
     <meta name="theme-color" content="#071A33" />
     <meta
       name="description"
       content="Seu negócio local nos EUA precisa passar confiança online. Receba uma prévia grátis do site em até 24h e só pague se aprovar para publicar."
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./vendor/gsap.min.js"></script>
-    <script defer src="./vendor/ScrollTrigger.min.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K732MZCN');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVYFVYG0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HRVYFVYG0X');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1722841902056244');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
     <script defer src="./site.js"></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K732MZCN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Meta Pixel Code (noscript) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1722841902056244&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code (noscript) -->
     <header class="site-nav" aria-label="Navegacao principal">
       <a class="brand" href="#top" aria-label="BR Local Pro">
         <span class="brand-mark">BR</span>
@@ -44,12 +89,15 @@
           </p>
           <div class="hero-mobile-visual" aria-label="Transformação de perfil improvisado em site profissional">
             <img
-              src="assets/br-local-pro-hero-impact.png"
+              src="assets/br-local-pro-hero-impact-1400.webp"
+              srcset="assets/br-local-pro-hero-impact-900.webp 900w, assets/br-local-pro-hero-impact-1400.webp 1400w, assets/br-local-pro-hero-impact-1800.webp 1800w"
+              sizes="(max-width: 760px) 96vw, 54vw"
               alt="Antes e depois da presença online: perfil improvisado menor e site profissional maior em notebook e celular."
-              width="5800"
-              height="4320"
+              width="1800"
+              height="1341"
               loading="eager"
               fetchpriority="high"
+              decoding="async"
             >
           </div>
           <p class="hero-offer-line">
@@ -83,12 +131,15 @@
         <div class="hero-visual hero-impact-frame" aria-label="Transformação de perfil improvisado em site profissional">
           <img
             class="hero-impact-image"
-            src="assets/br-local-pro-hero-impact.png"
+            src="assets/br-local-pro-hero-impact-1400.webp"
+            srcset="assets/br-local-pro-hero-impact-900.webp 900w, assets/br-local-pro-hero-impact-1400.webp 1400w, assets/br-local-pro-hero-impact-1800.webp 1800w"
+            sizes="(max-width: 760px) 96vw, 54vw"
             alt="Antes e depois da presença online: perfil improvisado menor e site profissional maior em notebook e celular."
-            width="5800"
-            height="4320"
+            width="1800"
+            height="1341"
             loading="eager"
             fetchpriority="high"
+            decoding="async"
           >
         </div>
       </section>
@@ -103,7 +154,7 @@
 
           <div class="trust-compare" aria-label="Comparação entre presença improvisada e site profissional">
             <article class="trust-card weak">
-              <img src="assets/problem-before-profile.png" alt="Presença online improvisada com perfil e informações espalhadas." loading="eager" width="1456" height="1088">
+              <img src="assets/problem-before-profile.webp" alt="Presença online improvisada com perfil e informações espalhadas." loading="lazy" decoding="async" fetchpriority="low" width="1456" height="1088">
               <div class="trust-card-body">
                 <span>Sem site</span>
                 <h3>Perfil espalhado</h3>
@@ -118,7 +169,7 @@
             <div class="trust-arrow" aria-hidden="true"><span></span></div>
 
             <article class="trust-card strong">
-              <img src="assets/problem-after-site.png" alt="Site profissional organizado em notebook e celular para negócio local." loading="eager" width="1456" height="1088">
+              <img src="assets/problem-after-site.webp" alt="Site profissional organizado em notebook e celular para negócio local." loading="lazy" decoding="async" fetchpriority="low" width="1456" height="1088">
               <div class="trust-card-body">
                 <span>Com a BR Local Pro</span>
                 <h3>Site que passa confiança</h3>
@@ -237,22 +288,22 @@
           <button class="carousel-arrow prev" type="button" aria-label="Exemplo anterior"><span></span></button>
           <div class="example-carousel showcase-carousel" tabindex="0" aria-live="polite">
             <figure class="example-slide is-active" data-title="Cleaning Services" data-caption="Site direto para passar confiança antes da visita ou orçamento." data-accent="green">
-              <img src="assets/examples/cleaner.png" alt="Exemplo de site para empresa de limpeza." width="1792" height="1024">
+              <img src="assets/examples/cleaner.webp" alt="Exemplo de site para empresa de limpeza." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
             <figure class="example-slide" data-title="Painting" data-caption="Imagem forte, serviços claros e botão de orçamento sempre visível." data-accent="green">
-              <img src="assets/examples/painting.png" alt="Exemplo de site para empresa de pintura." width="1792" height="1024">
+              <img src="assets/examples/painting.webp" alt="Exemplo de site para empresa de pintura." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
             <figure class="example-slide" data-title="Handyman" data-caption="Mostra segurança, serviços e contato rápido para quem precisa resolver em casa." data-accent="green">
-              <img src="assets/examples/handyman.png" alt="Exemplo de site para handyman services." width="1792" height="1024">
+              <img src="assets/examples/handyman.webp" alt="Exemplo de site para handyman services." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
             <figure class="example-slide" data-title="Landscape" data-caption="Visual bonito para vender cuidado, área atendida e pedido de estimate." data-accent="green">
-              <img src="assets/examples/landscape.png" alt="Exemplo de site para landscaping e lawn care." width="1792" height="1024">
+              <img src="assets/examples/landscape.webp" alt="Exemplo de site para landscaping e lawn care." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
             <figure class="example-slide" data-title="Construction" data-caption="Projeto com aparência sólida para obras, reformas e serviços de alto ticket." data-accent="green">
-              <img src="assets/examples/construction.png" alt="Exemplo de site para construction e remodeling." width="1792" height="1024">
+              <img src="assets/examples/construction.webp" alt="Exemplo de site para construction e remodeling." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
             <figure class="example-slide" data-title="Aesthetics" data-caption="Apresentação premium para serviços de beleza, tratamentos e agendamento." data-accent="rose">
-              <img src="assets/examples/aesthetics.png" alt="Exemplo de site para aesthetics studio." width="1792" height="1024">
+              <img src="assets/examples/aesthetics.webp" alt="Exemplo de site para aesthetics studio." loading="lazy" decoding="async" fetchpriority="low" width="1792" height="1024">
             </figure>
           </div>
           <button class="carousel-arrow next" type="button" aria-label="Próximo exemplo"><span></span></button>
@@ -320,12 +371,13 @@
       <section id="empresa" class="about-section light-section">
         <figure class="company-card" aria-label="Operação digital da BR Local Pro">
           <img
-            src="assets/br-local-pro-company-trust.png"
+            src="assets/br-local-pro-company-trust.webp"
             alt="Notebook e celular mostrando um site profissional para negócio local"
             width="1536"
             height="1024"
-            loading="eager"
+            loading="lazy"
             decoding="async"
+            fetchpriority="low"
           />
           <figcaption>
             <span>BR Local Pro</span>
